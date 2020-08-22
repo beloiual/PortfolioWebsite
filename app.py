@@ -7,9 +7,10 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 from dash_table import DataTable
 
-external_stylesheets = ['https://codepen.io/kazzkiq/pen/pvqvxO']
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
-app=JupyterDash(__name__, external_stylesheets=external_stylesheets)
 colors = {
     'background': '#5e76a1',
     'text': '#e5e9f0'
@@ -215,4 +216,5 @@ app.layout = html.Div([
     
 ])
 
-app.run_server(mode='inline')
+if __name__ == '__main__':
+    app.run_server()
