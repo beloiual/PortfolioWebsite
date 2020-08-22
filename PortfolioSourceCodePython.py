@@ -172,7 +172,7 @@ app.layout = html.Div([
             html.Label('This website was created using the Jupyter Dash library in Python and was deployed using Heroku'),
             html.Br(),
             html.A(html.Button('Source Code', className='three columns'),
-            href='https://www.dropbox.com/s/t38t9gw2x2iavsi/Modeling%20and%20Analysis%20of%20Bridge%20Vibrations%20Main%20Document.docx?dl=0'),
+            href='https://github.com/beloiual/PortfolioWebsite'),
 
 
 
