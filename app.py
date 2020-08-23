@@ -10,6 +10,7 @@ from dash_table import DataTable
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app=JupyterDash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 colors = {
     'background': '#fbf9c7',
     'text': '#e5e9f0'
