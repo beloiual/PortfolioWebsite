@@ -1,8 +1,7 @@
-
-
-from dash import Dash
+import dash
 import dash_core_components as dcc
 import dash_html_components as html
+import plotly.graph_objs as go
 
 from dash.dependencies import Input, Output, State
 from dash_table import DataTable
@@ -29,6 +28,10 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
             html.H2('About Me'),
             html.Label('I am currently an undergraduate studying Computer Engineering at the University of Michigan Ann Arbor, set to graduate in 2024.'),
             html.Label('Over this past summer, I have been developing skills in creating BlockChain smart contracts using the Solidity programming language and deploying them to testnets. Along with increasing my grasp on the vast applications of Blockchain development, I have also been developing my skills in web development.'),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
             html.Br(),
             html.H5('The website you are on right now was programmed completely by me using the Juypter Dash library in Python.'),
             html.Br(),
