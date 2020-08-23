@@ -1,4 +1,3 @@
-
 from jupyter_dash import JupyterDash
 
 from dash import Dash
@@ -7,9 +6,6 @@ import dash_html_components as html
 
 from dash.dependencies import Input, Output, State
 from dash_table import DataTable
-
-server = app.server
-
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -223,5 +219,6 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 
     
 ])
+
 if __name__ == '__main__':
-    app.run_server(mode='inline')
+    app.run_server()
