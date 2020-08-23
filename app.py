@@ -1,4 +1,4 @@
-from jupyter_dash import JupyterDash
+
 
 from dash import Dash
 import dash_core_components as dcc
