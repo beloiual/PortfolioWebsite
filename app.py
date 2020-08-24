@@ -45,40 +45,52 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     html.Div([
         dcc.Tabs([
   dcc.Tab(label='About', children=[ 
+       html.Div([
+            html.Br(),
+        ], className="ten column"),##style sets the alignment of text
         html.Div([
-            
+            html.Label('_______________________________________________________________________________________________________________________________'),
             html.H2('About Me'), ## about me section
-            html.Img(src='https://cdn.discordapp.com/attachments/695721840324247562/746980932598104125/unknown.png', style={'width':'100%'}), ##adds a photo of the terminal
             html.Br(),
-            html.H5('The website you are on right now was programmed completely by me using the Jupyter Dash library in Python.'), 
-            html.Br(),
-            html.Br(),
+            html.Label('aboutme.py compiling..... '),
+            html.Label('Compiled succesfully (Caught 0 errors)'),
             html.Br(),
             html.Br(),
-            ], className="seven columns", style=dict(textAlign='center')),
+            html.Br(),
+            html.Label('print(Question1)'),
+            html.Label('>>What am I currently Studying?'),
+            html.Label('print(Answer1)'),
+            html.Label('>> I am currently studying Computer Engineering at the University of Michigan, Ann Arbor (Class of 2024).'),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Label('print(Question2)'),
+            html.Label('>>What have I been doing this summer?'),
+            html.Label('print(Answer2)'),
+            html.Label('>> Over this past summer, I have been developing skills in creating smart contracts using Blockchain technology through Solidity. I have actively been working on creating secure smart contracts and deploying them to testnets, such as the Ropsten test net, through the use of the Truffle framework. Along with increasing my grasp on the vast applications of Blockchain development, I have been developing my skills in web development through Python, and soon, HTML.'),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.H4('The website you are on right now was programmed and formated completely by me.'), 
+            html.Br(),
+            html.Label('_______________________________________________________________________________________________________________________________'),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            ], className="seven columns", style=dict(textAlign='left')),
           html.Div([
-            
-            html.Img(src='https://cdn.discordapp.com/attachments/705838282440835164/746767914270589098/image0.png', style={'width':'50%'}), ##personal photo and social
+            html.Br(),
+            html.Img(src='https://cdn.discordapp.com/attachments/705838282440835164/746767914270589098/image0.png', style={'width':'90%'}), ##personal photo and social
             html.Label("Email: beloiual@umich.edu"),
             html.Label("LinkedIn: alexandru-beloiu-4ab46b1b5"),
             html.Label("Instagram: @alex_beloiu"),
             html.Br(),
 
-        ], className="four columns", style=dict(textAlign='center')),##style sets the alignment of text
+        ], className="four columns", style=dict(textAlign='left')),##style sets the alignment of text
         html.Div([
             html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-           html.Label("This website is optimized for PC."),
+            html.Label("This website is optimized for PC."),
             html.Br(),
         ], className="eleven columns", style=dict(textAlign='Right')),##style sets the alignment of text
   ],style=tab_style, selected_style=tab_selected_style),
